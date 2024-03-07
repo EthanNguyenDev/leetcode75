@@ -45,10 +45,8 @@ public class MaxNumberOfKSumPairs {
 
 			int noOfAppearance = appearance.getOrDefault(remaining, 0);
 			if (noOfAppearance > 0) {
+				result++;
 				appearance.put(remaining, noOfAppearance - 1);
-				if (appearance.getOrDefault(num, 0) >= 0) {
-					result++;
-				}
 			} else {
 				appearance.put(num, appearance.getOrDefault(num, 0) + 1);
 			}
