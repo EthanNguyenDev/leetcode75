@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.Stack;
 
 /*  
  * https://leetcode.com/problems/keys-and-rooms/description/?envType=study-plan-v2&envId=leetcode-75
@@ -30,9 +31,39 @@ public class KeyAndRoom {
 		rooms2.add(Arrays.asList(2));
 		rooms2.add(Collections.singletonList(3));
 		rooms2.add(Collections.emptyList());
-		System.out.println(canVisitAllRooms(rooms2)); // true
+		System.out.println(canVisitAllRoomsDFS(rooms2)); // true
 	}
 
+	static public boolean canVisitAllRoomsDFS(List<List<Integer>> rooms) {
+		int n = rooms.size();
+		boolean[] visited = new boolean[n];
+		
+		Stack<Integer> s = new Stack<>();
+		s.push(0);
+		visited[0] = true;
+		
+		while (!s.isEmpty()) {
+			int currentRoom = s.pop();
+			for (int neighbor: rooms.get(currentRoom)) {
+				if (!visited[neighbor]) {
+					visited[neighbor] = true;
+					s.push(neighbor);
+				}
+				
+			}
+		}
+		
+		for (int i = 0; i < visited.length; i++) {
+			if (!visited[i]) {
+				return false;
+			}
+		}
+		
+		return true;
+		
+	}
+
+	// this is BFS not DFS
 	static public boolean canVisitAllRooms(List<List<Integer>> rooms) {
 		int n = rooms.size();
 		boolean[] visited = new boolean[n];
