@@ -35,6 +35,7 @@ Below is a table listing the problems along with links to the corresponding Java
 | Stack            | 394. Decode String | [DecodeString.java](./src/leetcode/seventyfive/stack/DecodeString.java)  | [decode-string](https://leetcode.com/problems/decode-string/ )                                                                     |
 | Queue            | 933. Number of Recent Calls      | [RecentCounter.java](./src/leetcode/seventyfive/queue/RecentCounter.java)                   | [number-of-recent-calls](https://leetcode.com/problems/number-of-recent-calls/) |
 | Queue            | 649. Dota2 Senate                | [Dota2Senate.java](./src/leetcode/seventyfive/queue/Dota2Senate.java)                      | [dota2-senate](https://leetcode.com/problems/dota2-senate/) |
+| LinkedList       | 206. Reverse Linked List         | [ReverseLinkedList.java](./src/leetcode/seventyfive/linkedlist/ReverseLinkedList.java)                                                 | [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/) |
 | ...              | ...                               | ...                                                                                          | ... |
 
 ## Goal
