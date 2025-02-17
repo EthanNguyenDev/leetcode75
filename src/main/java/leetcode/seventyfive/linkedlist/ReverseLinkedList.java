@@ -7,10 +7,10 @@ public class ReverseLinkedList {
         ListNode<Integer> node3 = new ListNode<>(3, node4);
         ListNode<Integer> node2 = new ListNode<>(2, node3);
         ListNode<Integer> head = new ListNode<>(1, node2);
-        printList(head);
+        ListNode.printList(head);
 
         ListNode newHead = reverseList(head);
-        printList(newHead);
+        ListNode.printList(newHead);
 
 
     }
@@ -27,14 +27,6 @@ public class ReverseLinkedList {
         return prev;
     }
 
-    public static void printList(ListNode head) {
-        ListNode current = head;
-        while (current != null) {
-            System.out.print(current.value + ", ");
-            current = current.next;
-        }
-        System.out.println();
-    }
 }
 
 class ListNode<T> {
@@ -54,4 +46,19 @@ class ListNode<T> {
         this.value = value;
     }
 
+    public static void printList(ListNode head) {
+        ListNode current = head;
+        while (current != null) {
+            System.out.print(current.value + ", ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    @Override
+    public String toString() {
+        return "ListNode{" +
+            "value=" + value +
+            '}';
+    }
 }
