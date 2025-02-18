@@ -1,6 +1,6 @@
 package grokkingcodinginterview.pattern.twopointers;
 
-public class RevertString2 {
+public class RevertWordsInString2 {
 
 	public static void main(String[] args) {
 		char[] input = "Hello     World".toCharArray();

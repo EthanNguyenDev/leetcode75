@@ -38,6 +38,18 @@ Below is a table listing the problems along with links to the corresponding Java
 | LinkedList       | 206. Reverse Linked List         | [ReverseLinkedList.java](./src/leetcode/seventyfive/linkedlist/ReverseLinkedList.java)                                                 | [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/) |
 | ...              | ...                               | ...                                                                                          | ... |
 
+## Problems from "Grokking Coding Interview Patterns in Java"
+| Problem Pattern  | Problem Name               | Java Solution File                                                                               | URL                                             |
+|------------------|----------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| Two Pointer      | Valid Palindrome           | [CheckPalindrome.java](./src/main/java/grokkingcodinginterview.pattern/CheckPalindrome.java) | https://www.educative.io/courses/grokking-coding-interview/valid-palindrome
+| Two Pointer      | 3 Sum                      | [FindSumOfThree.java](./src/main/java/grokkingcodinginterview.pattern/FindSumOfThree.java)   | https://www.educative.io/courses/grokking-coding-interview/3sum |
+| Two Pointer      | Remove Nth Node from End of List | [RemoveNthNodeFromEndOfList.java](./src/main/java/grokkingcodinginterview.pattern/RemoveNthNodeFromEndOfList.java) | https://www.educative.io/courses/grokking-coding-interview/remove-nth-node-from-end-of-list |
+| Two Pointer      | Reverse Words in a String        | [RevertWordsInString.java](./src/main/java/grokkingcodinginterview.pattern/RevertWordsInString.java) | https://www.educative.io/courses/grokking-coding-interview/reverse-words-in-a-string |
+| Two Pointer      | Sort Colors            | [SortThreeColors.java](./src/main/java/grokkingcodinginterview.pattern/SortThreeColors.java) | https://www.educative.io/courses/grokking-coding-interview/sort-colors |
+| Two Pointer      | SumPairExist               | [SumPairExist.java](./src/main/java/grokkingcodinginterview.pattern/SumPairExist.java) | |
+
+
+
 ## Goal
 - Solve one LeetCode problem every day.
 - Track my progress and measure improvement over time.
